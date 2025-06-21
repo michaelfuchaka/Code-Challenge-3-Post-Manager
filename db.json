@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "Blog-Title": "Global Tech Ai opens a new office in Ukraine ",
+      "author": "Global Insight News",
+      "category": "Technology",
+      "content":"Global Tech AI has expanded its international presence by opening a new office in Ukraine. This move highlights the company’s commitment to innovation and its confidence in Ukraine’s thriving tech talent.\n\nThe new office will serve as a hub for AI research, development, and collaboration with local engineers and institutions. It aims to accelerate product innovation and support the region’s growing digital economy.\n\nWith this strategic step, Global Tech AI strengthens its position as a leader in artificial intelligence, driving smarter solutions across borders.\n\nUkraine’s tech ecosystem just got stronger — and Global Tech AI is proud to be part of it." ,
+      "imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D ",
+      "date": "2025-06-21"
+    },
+    {
+      "id": 2,
+      "Blog-Title": " Why the WHO Recomends Meditation as a Powerful Tool for Mental and Physical Health",
+      "author": "Global Insight News",
+      "category": "Health",
+      "content": "The World Health Organization (WHO) recognizes meditation as a powerful and effective tool for improving both mental and physical health.\n\nMeditation helps reduce stress, anxiety, and depression—conditions that affect millions globally. By promoting inner calm and mental clarity, it supports emotional balance and overall well-being. WHO includes meditation in its mental health strategies as part of promoting psychosocial well-being.\n\nBut the benefits don’t stop at the mind. Meditation also improves physical health by helping lower blood pressure, boosting immunity, improving sleep quality, and supporting heart health. These benefits make it a key part of WHO’s holistic approach to health.\n\nIn today’s fast-paced world, meditation is not just a spiritual practice—it’s a science-backed solution to everyday health challenges. Whether practiced for a few minutes daily or as part of a larger wellness routine, meditation is a simple yet powerful way to take charge of your health.\n\nTake a deep breath, and start your meditation journey today. Your mind and body will thank you.",
+      "imageUrl": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aGVhbHRofGVufDB8fDB8fHww",
+      "date": "2025-06-21"
+    }
+  ]
+}

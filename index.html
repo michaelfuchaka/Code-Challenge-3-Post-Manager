@@ -8,18 +8,28 @@
 </head>
 <body>
     <div>
-        <h1>News Blog Post Manager </h1>
+        <h1>Global Insight Hub Manager </h1>
+
+        <!-- Inputs -->
         <div id="input">
         <input type="text" id="new-title" placeholder="Blog Title" required />
         <input type="text" id="new-author" placeholder="Author" required />
+                <!-- Select News Category  -->
+        <select name="" id="new-category" class="p-2 border rounded-md w-full mb-2">
+             <option value="politics">Politics</option>
+             <option value="Economy">Economy</option>
+             <option value="Technology">Technology</option>
+             <option value="Sports">Sports</option>
+             <option value="Health">Health</option>
+        </select>
         <input type="text" id="imageUrl" placeholder="Enter image Url here">
          <textarea id="new-content" placeholder="Content" required></textarea>
          <button onclick="addPost()">Add Blog Post</button>
       </div>
-
+          <!--post display  -->
       <div id="main-container">
-      <div id="post-list"></div>
-      <div id="post-detail"></div>
+      <div id="news-list"></div>
+      <div id="news-detail"></div>
       </div>
     </div>
     <script src="src/index.js"></script>

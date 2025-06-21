@@ -12,6 +12,7 @@ body {
 }
 
   #input input,
+  input select,
   #input textarea,
   #input button {
     width: 100%;
