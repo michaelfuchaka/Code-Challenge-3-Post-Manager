@@ -21,7 +21,6 @@ function displayPosts() {
 
         postDiv.innerHTML = `
             <h3 class="post-title" data-id="${post.id}" >${post.title}</h3>
-            <img src="${post.imageUrl}" alt="${post.title}" width="300" />
            <p> ${post.category}</p>
            <p> ${newsDate}</p>
             <p > By ${post.author}</p>
