@@ -40,19 +40,24 @@ users can:
  **1. Clone the repo or create a new folder**
   
   ```bash
-  git clone  git@github.com:michaelfuchaka/Code-Challenge-3-Post-Manager.git
+  git clone  git@github.com:michaelfuchaka/Code-Challenge-3-Post-Manager.git 
   cd Code-Challenge-3-Post-Manager
-
+  ```
   **2. Install json-server globally**
+  ```bash
     npm install -g json-server@0.17.4
-
+  ```
   **3. Run The backend**
+  ```bash
    json-server db.json
+   ```
     visit: http:localhost:3000/
 
   **4.Start live server**
+  Open your code  editor i.e in Vs-code right click on idndex.html and select "open with live server". 
+   or
  Use any local server you prefer  
-  ```
+  
 
  ---
 
@@ -61,4 +66,4 @@ users can:
  For learning purposes
 
 ## Licesne     
-This project is open source and free to use for educational purposes
+This project is licensed under the [MIT License](./LICENSE)
