@@ -1,23 +1,24 @@
-## POST MANAGER
+## News Blog App
 
-This is a simpple blog management web app which is built using the following languages
+This is a simpple news blog  web app  that allows users  to view , create , and manage news articles which is built using the following languages
  - **HTML**
  - **cSS**
- - **JAVASCRIPT** ,with a mock backend served by 'json server'.
+ - **JAVASCRIPT**,
+ it mimics  a real world publsihing platform
 
 users can:
-- View all blog titles and images in the list
-- Click on  a post title from the post-list and seed its  details
-- Add a new blog post
-- Ediot and Delete a post
+- View a list of blog  titles(news headlines) and images
+- Click on  a post title from the post-list and see full news articles
+- Add a new blog post(articles)
+- Ediot and Delete existing news posts
 
 ---
 
 ## Features 
-- Fetch and display posts from a mock API
-- Clicl a title to view post details
-- Add a new blog post using a form
-- Edit an existing post title and content
+- Fetch and display blog posts(news articles) from a mock API
+- Click a title to view post details
+- Add a new blog post (news article) using a form
+- Edit an existing post title(news headkline) and content
 - Delete a blog post
 
 ---
@@ -29,7 +30,7 @@ users can:
 ---
 
 ## Project Structure
- Post-Manager
+ News-Blog-App
  - index.html  (Main HTML file)
  - db.json  (Mock database for json-server)
  - css/style.css (Styling)
