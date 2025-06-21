@@ -51,7 +51,8 @@ users can:
   ```bash
    json-server db.json
    ```
-    visit: http:localhost:3000/
+   then
+    [visit: http:localhost:3000/](http:localhost:3000)
 
   **4.Start live server**
   Open your code  editor i.e in Vs-code right click on idndex.html and select "open with live server". 
