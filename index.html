@@ -7,11 +7,12 @@
      <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div>
+    <div class="main-container">
         <h1>Global Insight Hub Manager </h1>
 
         <!-- Inputs -->
-        <div id="input">
+         <form  id="new-post-form" >
+            <div id="input" class="column">
         <input type="text" id="new-title" placeholder="Blog Title" required />
         <input type="text" id="new-author" placeholder="Author" required />
                 <!-- Select News Category  -->
@@ -22,14 +23,15 @@
              <option value="Sports">Sports</option>
              <option value="Health">Health</option>
         </select>
-        <input type="text" id="imageUrl" placeholder="Enter image Url here">
+        <input type="text" id="imageUrl" placeholder="Enter image Url here" required>
          <textarea id="new-content" placeholder="Content" required></textarea>
-         <button onclick="addPost()">Add Blog Post</button>
+         <button type="submit">Add Blog Post</button>
       </div>
+      </form>
           <!--post display  -->
       <div id="main-container">
-      <div id="news-list"></div>
-      <div id="news-detail"></div>
+      <div id="news-list" class=" column"></div>
+      <div id="news-detail" class="detail-section"></div>
       </div>
     </div>
     <script src="src/index.js"></script>
