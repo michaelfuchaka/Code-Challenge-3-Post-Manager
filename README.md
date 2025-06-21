@@ -9,7 +9,7 @@ This is a simpple news blog  web app  that allows users  to view , create , and 
 users can:
 - View a list of blog  titles(news headlines) and images
 - Click on  a post title from the post-list and see full news articles
-- Add a new blog post(articles)
+- Add a new blog post(news articles)
 - Ediot and Delete existing news posts
 
 ---
@@ -18,8 +18,8 @@ users can:
 - Fetch and display blog posts(news articles) from a mock API
 - Click a title to view post details
 - Add a new blog post (news article) using a form
-- Edit an existing post title(news headkline) and content
-- Delete a blog post
+- Edit an existing post title(news headline) and content
+- Delete a blog post(news article)
 
 ---
 
