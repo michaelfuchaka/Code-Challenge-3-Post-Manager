@@ -1,9 +1,9 @@
 ## POST MANAGER
 
 This is a simpple blog management web app which is built using the following languages
- -**HTML**
- -**SS**
- -**JAVASCRIPT** ,with a mock backend served by 'json server'.
+ - **HTML**
+ - **cSS**
+ - **JAVASCRIPT** ,with a mock backend served by 'json server'.
 
 users can:
 - View all blog titles and images in the list
