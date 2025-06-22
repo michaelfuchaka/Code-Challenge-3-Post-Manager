@@ -7,25 +7,33 @@ function displayPosts() {
       const postList = document.getElementById("news-list");
       postList.innerHTML = "";
 
+      // Sorting posts by date
+        const classifiedPosts = posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+       if (classifiedPosts.length > 0) {
+             displayPostDetails(classifiedPosts[0]);
+           }
+        //  Looping through posts
+        classifiedPosts.forEach((post) => {
+            
       // Creating div for each post
-      posts.forEach((post) => {
         const postDiv = document.createElement("div");
         postDiv.classList.add("news-item");
 
-        // Adding date for the news posts
+        // Formatting the date for the news posts
         const newsDate = new Date(post.date).toLocaleDateString("en-US", {
           year: "numeric",
           month: "long",
           day: "numeric",
         });
-
+        //  Showing title and author in innerhtml
         postDiv.innerHTML = `
             <h3 class="post-title" data-id="${post.id}" >${post.title}</h3>
             <p > By ${post.author} ,  posted on ${newsDate}  </p>
           <hr />
         `;
 
-        // Add click listener to title
+        //  Adding click event to the title
         const titleEl = postDiv.querySelector(".post-title");
         titleEl.addEventListener("click", () => handlePostClick(post.id));
 
@@ -37,7 +45,7 @@ function displayPosts() {
     });
 }
 
-
+        // sending click Get request 
       function handlePostClick(postId) {
           fetch(`http://localhost:3000/posts/${postId}`)
           .then((res) => res.json())
@@ -51,7 +59,7 @@ function displayPosts() {
 
 
 
-// Render post details in the #news-detail section
+        // Display post details in the #news-detail section when you click post title
        function displayPostDetails(post) {
       const postDetail = document.getElementById("news-detail");
        postDetail.innerHTML = `
@@ -61,16 +69,18 @@ function displayPosts() {
          <img src="${post.imageUrl}" alt="${post.title}" style="width:100%;max-width:488px;
           height:325px; object-fit:cover;"/>
           <p>${post.content}</p>
+          
   `;
 }
 
-          
+        // Setting up a form submission listener
     function addNewPostListener() {
     const form = document.getElementById("new-post-form");
 
        form.addEventListener("submit", (e) => {
         e.preventDefault();
 
+        // Collecting form data
          const title = document.getElementById("new-title").value;
          const author = document.getElementById("new-author").value;
          const category = document.getElementById("new-category").value;
@@ -87,7 +97,7 @@ function displayPosts() {
       date,
     };
 
-    // POST to the server
+    // Sending new POST to the server
     fetch("http://localhost:3000/posts", {
         method: "POST",
         headers: {
