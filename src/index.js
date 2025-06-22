@@ -21,8 +21,7 @@ function displayPosts() {
 
         postDiv.innerHTML = `
             <h3 class="post-title" data-id="${post.id}" >${post.title}</h3>
-           <p> ${post.category},  posted on ${newsDate}   </p>
-            <p > By ${post.author}</p>
+            <p > By ${post.author} ,  posted on ${newsDate}  </p>
           <hr />
         `;
 
@@ -57,8 +56,10 @@ function displayPosts() {
       const postDetail = document.getElementById("news-detail");
        postDetail.innerHTML = `
          <h2>${post.title}</h2>
-         <p>By ${post.author}</p>
-         <img src="${post.imageUrl}" alt="${post.title}" width="500" />
+        <p>By Global Insight News<span style="display: inline-block; margin-left: 40%; font-style: italic;">
+         ${post.category}</span></p>
+         <img src="${post.imageUrl}" alt="${post.title}" style="width:100%;max-width:488px;
+          height:325px; object-fit:cover;"/>
           <p>${post.content}</p>
   `;
 }
