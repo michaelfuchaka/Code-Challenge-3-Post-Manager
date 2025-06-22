@@ -21,8 +21,7 @@ function displayPosts() {
 
         postDiv.innerHTML = `
             <h3 class="post-title" data-id="${post.id}" >${post.title}</h3>
-           <p> ${post.category}</p>
-           <p> ${newsDate}</p>
+           <p> ${post.category},  posted on ${newsDate}   </p>
             <p > By ${post.author}</p>
           <hr />
         `;
@@ -58,9 +57,9 @@ function displayPosts() {
       const postDetail = document.getElementById("news-detail");
        postDetail.innerHTML = `
          <h2>${post.title}</h2>
-         <p><strong>Author:</strong> ${post.author}</p>
+         <p>By ${post.author}</p>
          <img src="${post.imageUrl}" alt="${post.title}" width="500" />
-          <p><strong>Content:</strong> ${post.content}</p>
+          <p>${post.content}</p>
   `;
 }
 
