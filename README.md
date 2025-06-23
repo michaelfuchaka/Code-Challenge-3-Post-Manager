@@ -53,7 +53,7 @@ users can:
    json-server db.json
    ```
    then
-    [visit: http:localhost:3000/](http:localhost:3000)
+    [visit: http:localhost:3000/](http:localhost:3000/posts)
 
   **4.Start live server**
   Open your code  editor i.e in Vs-code right click on idndex.html and select "open with live server". 
