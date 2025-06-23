@@ -1,42 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News-Blog-App</title>
-     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <div class="main-container">
-        <div class="header">
-        <h1 class="title"> <img src="images/logo1.png" alt="logo" class="logo"/>Global Insight Hub Manager </h1>
-          </div>
-        <!-- Inputs -->
-         <div id="blog-layout">
-         <form  id="new-post-form" >
-            <div id="input" class="column">
-        <input type="text" id="new-title" placeholder="Blog Title" required />
-        <input type="text" id="new-author" placeholder="Author" required />
-                <!-- Select News Category  -->
-        <select name="" id="new-category" class="p-2 border rounded-md w-full mb-2">
-             <option value="politics">Politics</option>
-             <option value="Economy">Economy</option>
-             <option value="Technology">Technology</option>
-             <option value="Sports">Sports</option>
-             <option value="Health">Health</option>
-        </select>
-        <input type="text" id="imageUrl" placeholder="Enter image Url here" required>
-         <textarea id="new-content" placeholder="Content" required></textarea>
-         <button type="submit">Add Blog Post</button>
+      <div class="header">
+        <h1 class="title">
+          <img src="images/logo1.png" alt="logo" class="logo" />Global Insight
+          Hub Manager
+        </h1>
       </div>
-      </form>
-          <!--post display  -->
-       
-      <div id="news-detail" class="detail-section"></div>
-      <div id="news-list" class=" column"></div>
-     
+      <!-- Inputs -->
+      <div id="blog-layout">
+        <form id="new-post-form">
+          <div id="input" class="column">
+            <input
+              type="text"
+              id="new-title"
+              placeholder="Blog Title"
+              required
+            />
+            <input type="text" id="new-author" placeholder="Author" required />
+            <!-- Select News Category  -->
+            <select
+              name=""
+              id="new-category"
+              class="p-2 border rounded-md w-full mb-2"
+            >
+              <option value="politics">Politics</option>
+              <option value="Economy">Economy</option>
+              <option value="Technology">Technology</option>
+              <option value="Sports">Sports</option>
+              <option value="Health">Health</option>
+            </select>
+            <input
+              type="text"
+              id="imageUrl"
+              placeholder="Enter image Url here"
+              required
+            />
+            <textarea
+              id="new-content"
+              placeholder="Content"
+              required
+            ></textarea>
+            <button type="submit">Add Blog Post</button>
+          </div>
+        </form>
+        <!--post display  -->
+
+        <div id="news-detail" class="detail-section"></div>
+        <div id="news-list" class="column"></div>
       </div>
     </div>
     <script src="src/index.js"></script>
-</body>
+  </body>
 </html>
